@@ -1,5 +1,6 @@
 const gulp = require('gulp');
-const gulpJsdoc2md = require('gulp-jsdoc-to-markdown');
+const fs = require('fs-then-native')
+const jsdoc2md = require('jsdoc-to-markdown')
 const rename = require('gulp-rename');
 
 const paths = require('../paths');
@@ -9,18 +10,6 @@ const paths = require('../paths');
  */
 module.exports = function docsTask() {
 
-	return gulp
-		.src(paths.src.js)
-		.pipe(
-			gulpJsdoc2md()
-		)
-		.pipe(
-			rename(function(pathConverted) {
-				pathConverted.extname = '.md';
-			})
-		)
-		.pipe(
-			gulp.dest('docs')
-		)
-		;
+  return jsdoc2md.render({ files: paths.src.js })
+    .then(output => fs.writeFile('docs/api.md', output))
 };

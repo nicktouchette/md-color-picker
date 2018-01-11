@@ -1,3 +1,19 @@
+## Classes
+
+<dl>
+<dt><a href="#$mdColorPickerConfig">$mdColorPickerConfig</a></dt>
+<dd><p>$mdColorPickerConfig Provider</p>
+</dd>
+</dl>
+
+## Functions
+
+<dl>
+<dt><a href="#adjustXY">adjustXY(x, y)</a> ⇒ <code>Object</code></dt>
+<dd><p>adjustXY - Limit the mouse coordinates to with in the wheel.</p>
+</dd>
+</dl>
+
 <a name="$mdColorPickerConfig"></a>
 
 ## $mdColorPickerConfig
@@ -33,7 +49,7 @@ $mdColorPickerConfig Provider
 ### $mdColorPickerConfig.Notation
 Notation object.
 
-**Kind**: instance class of <code>[$mdColorPickerConfig](#$mdColorPickerConfig)</code>  
+**Kind**: instance class of [<code>$mdColorPickerConfig</code>](#$mdColorPickerConfig)  
 
 * [.Notation](#$mdColorPickerConfig+Notation)
     * [new Notation(notation)](#new_$mdColorPickerConfig+Notation_new)
@@ -56,26 +72,26 @@ Notation object.
 #### notation.name : <code>String</code>
 The name of the notation.
 
-**Kind**: instance property of <code>[Notation](#$mdColorPickerConfig+Notation)</code>  
+**Kind**: instance property of [<code>Notation</code>](#$mdColorPickerConfig+Notation)  
 <a name="$mdColorPickerConfig+Notation+index"></a>
 
 #### notation.index : <code>Integer</code>
 The index of the notation in the [order](#$mdColorPickerConfig+notations+order) array.
 
-**Kind**: instance property of <code>[Notation](#$mdColorPickerConfig+Notation)</code>  
+**Kind**: instance property of [<code>Notation</code>](#$mdColorPickerConfig+Notation)  
 **Default**: <code>-1</code>  
 <a name="$mdColorPickerConfig+Notation+testExp"></a>
 
 #### notation.testExp : <code>RegExp</code>
 Test RegExp used by [$mdColorPickerConfig#Notation#test]($mdColorPickerConfig#Notation#test)
 
-**Kind**: instance property of <code>[Notation](#$mdColorPickerConfig+Notation)</code>  
+**Kind**: instance property of [<code>Notation</code>](#$mdColorPickerConfig+Notation)  
 <a name="$mdColorPickerConfig+Tab"></a>
 
 ### $mdColorPickerConfig.Tab
 Base for all mdColorPicker Tabs.
 
-**Kind**: instance class of <code>[$mdColorPickerConfig](#$mdColorPickerConfig)</code>  
+**Kind**: instance class of [<code>$mdColorPickerConfig</code>](#$mdColorPickerConfig)  
 
 * [.Tab](#$mdColorPickerConfig+Tab)
     * [new Tab(name, tab)](#new_$mdColorPickerConfig+Tab_new)
@@ -108,37 +124,37 @@ Base for all mdColorPicker Tabs.
 #### tab.name : <code>String</code>
 The name of the tab.
 
-**Kind**: instance property of <code>[Tab](#$mdColorPickerConfig+Tab)</code>  
+**Kind**: instance property of [<code>Tab</code>](#$mdColorPickerConfig+Tab)  
 <a name="$mdColorPickerConfig+Tab+icon"></a>
 
 #### tab.icon : <code>String</code>
 The svg icon name.
 
-**Kind**: instance property of <code>[Tab](#$mdColorPickerConfig+Tab)</code>  
+**Kind**: instance property of [<code>Tab</code>](#$mdColorPickerConfig+Tab)  
 <a name="$mdColorPickerConfig+Tab+template"></a>
 
 #### tab.template : <code>String</code>
 The template string for the tab.
 
-**Kind**: instance property of <code>[Tab](#$mdColorPickerConfig+Tab)</code>  
+**Kind**: instance property of [<code>Tab</code>](#$mdColorPickerConfig+Tab)  
 <a name="$mdColorPickerConfig+Tab+templateUrl"></a>
 
 #### tab.templateUrl : <code>String</code>
 The template URL for the tab.
 
-**Kind**: instance property of <code>[Tab](#$mdColorPickerConfig+Tab)</code>  
+**Kind**: instance property of [<code>Tab</code>](#$mdColorPickerConfig+Tab)  
 <a name="$mdColorPickerConfig+Tab+$elemnt"></a>
 
 #### tab.$elemnt : <code>$element</code>
 The angular.element wrapped element of the tab once rendered.
 
-**Kind**: instance property of <code>[Tab](#$mdColorPickerConfig+Tab)</code>  
+**Kind**: instance property of [<code>Tab</code>](#$mdColorPickerConfig+Tab)  
 <a name="$mdColorPickerConfig+notations"></a>
 
 ### $mdColorPickerConfig.notations : <code>Object</code>
 Holds the available color notations methods.
 
-**Kind**: instance property of <code>[$mdColorPickerConfig](#$mdColorPickerConfig)</code>  
+**Kind**: instance property of [<code>$mdColorPickerConfig</code>](#$mdColorPickerConfig)  
 
 * [.notations](#$mdColorPickerConfig+notations) : <code>Object</code>
     * [.order](#$mdColorPickerConfig+notations+order)
@@ -151,26 +167,26 @@ Holds the available color notations methods.
 #### notations.order
 Holds the order of the notaions to be displayed under the preview.
 
-**Kind**: instance property of <code>[notations](#$mdColorPickerConfig+notations)</code>  
+**Kind**: instance property of [<code>notations</code>](#$mdColorPickerConfig+notations)  
 **Default**: <code>[ &#x27;hex&#x27;, &#x27;rgb&#x27;, &#x27;hsl&#x27; ]</code>  
 <a name="$mdColorPickerConfig+notations+get"></a>
 
 #### notations.get(notation) ⇒ <code>Object</code>
 Rertieve a notation Object.
 
-**Kind**: instance method of <code>[notations](#$mdColorPickerConfig+notations)</code>  
+**Kind**: instance method of [<code>notations</code>](#$mdColorPickerConfig+notations)  
 **Returns**: <code>Object</code> - Corresponding notation Object.  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| notation | <code>String</code> &#124; <code>Integer</code> | Notation identifier. |
+| notation | <code>String</code> \| <code>Integer</code> | Notation identifier. |
 
 <a name="$mdColorPickerConfig+notations+select"></a>
 
 #### notations.select(color) ⇒ <code>String</code>
 Selects the notation based on the color string.
 
-**Kind**: instance method of <code>[notations](#$mdColorPickerConfig+notations)</code>  
+**Kind**: instance method of [<code>notations</code>](#$mdColorPickerConfig+notations)  
 **Returns**: <code>String</code> - String indentifier of the current notation.  
 
 | Param | Type | Description |
@@ -182,7 +198,7 @@ Selects the notation based on the color string.
 #### notations.add(name, notation)
 Adds a color notation to the available notations.
 
-**Kind**: instance method of <code>[notations](#$mdColorPickerConfig+notations)</code>  
+**Kind**: instance method of [<code>notations</code>](#$mdColorPickerConfig+notations)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -196,7 +212,7 @@ Holds the available tabs to be used.
 Does not hold the order or display properties of the.
 tabs in the window.
 
-**Kind**: instance property of <code>[$mdColorPickerConfig](#$mdColorPickerConfig)</code>  
+**Kind**: instance property of [<code>$mdColorPickerConfig</code>](#$mdColorPickerConfig)  
 
 * [.tabs](#$mdColorPickerConfig+tabs) : <code>Object</code>
     * [.order](#$mdColorPickerConfig+tabs+order)
@@ -208,19 +224,19 @@ tabs in the window.
 #### tabs.order
 Holds the order of the tabs, if a tab is not in this list, it will not be shown.
 
-**Kind**: instance property of <code>[tabs](#$mdColorPickerConfig+tabs)</code>  
+**Kind**: instance property of [<code>tabs</code>](#$mdColorPickerConfig+tabs)  
 **Default**: <code>[ &#x27;spectrum&#x27;,]</code>  
 <a name="$mdColorPickerConfig+tabs+add"></a>
 
 #### tabs.add(tab, [addToOrder])
 Adds a tab object to the avaiable tabs for the window.
 
-**Kind**: instance method of <code>[tabs](#$mdColorPickerConfig+tabs)</code>  
+**Kind**: instance method of [<code>tabs</code>](#$mdColorPickerConfig+tabs)  
 
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
 | tab | <code>Object</code> |  | [Tab](Tab) Options object or an instance of a [Tab](Tab). |
-| [addToOrder] | <code>Number</code> &#124; <code>String</code> &#124; <code>Boolean</code> | <code>true</code> | Should the new tab be added to the order.  Can be an index, array function name (`push`,`unshift`, etc), or `true` to push it on the end of the order.  If index is greater than the length of the array, actual starting index will be set to the length of the array, if negative, will begin that many elements from the end. |
+| [addToOrder] | <code>Number</code> \| <code>String</code> \| <code>Boolean</code> | <code>true</code> | Should the new tab be added to the order.  Can be an index, array function name (`push`,`unshift`, etc), or `true` to push it on the end of the order.  If index is greater than the length of the array, actual starting index will be set to the length of the array, if negative, will begin that many elements from the end. |
 
 **Example** *( Adding the Spectrum Tab.)*  
 ```js
@@ -252,10 +268,22 @@ $mdColorPickerConfig.tabs.add( spectrumTab );
 #### tabs.get(tab) ⇒ <code>Tab</code>
 Returns the specified tab.
 
-**Kind**: instance method of <code>[tabs](#$mdColorPickerConfig+tabs)</code>  
+**Kind**: instance method of [<code>tabs</code>](#$mdColorPickerConfig+tabs)  
 **Returns**: <code>Tab</code> - The tab object requested.  
 
 | Param | Type | Description |
 | --- | --- | --- |
 | tab | <code>String</code> | The identifier of the tab. |
+
+<a name="adjustXY"></a>
+
+## adjustXY(x, y) ⇒ <code>Object</code>
+adjustXY - Limit the mouse coordinates to with in the wheel.
+
+**Kind**: global function  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| x | <code>Int</code> | description |
+| y | <code>Int</code> | description |
 
